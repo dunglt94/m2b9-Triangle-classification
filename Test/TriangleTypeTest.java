@@ -55,4 +55,17 @@ class TriangleTypeTest {
         String triangle = triangleType.getTriangleType(side1, side2, side3);
         assertEquals(result, triangle);
     }
+
+    @Test
+    @DisplayName("Not a triangle with 1 side smaller than 0")
+    public void testTriangleTypeCaseNotATriangle2() {
+        TriangleType triangleType = new TriangleType();
+        int side1 = -1;
+        int side2 = 2;
+        int side3 = 1;
+
+        String result = "Not a triangle";
+        String triangle = triangleType.getTriangleType(side1, side2, side3);
+        assertEquals(result, triangle);
+    }
 }
