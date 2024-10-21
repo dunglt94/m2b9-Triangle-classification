@@ -42,4 +42,17 @@ class TriangleTypeTest {
         String triangle = triangleType.getTriangleType(side1, side2, side3);
         assertEquals(result, triangle);
     }
+
+    @Test
+    @DisplayName("Not a triangle with 1 side greater than the sum of other 2 sides")
+    public void testTriangleTypeCaseNotATriangle1() {
+        TriangleType triangleType = new TriangleType();
+        int side1 = 8;
+        int side2 = 2;
+        int side3 = 3;
+
+        String result = "Not a triangle";
+        String triangle = triangleType.getTriangleType(side1, side2, side3);
+        assertEquals(result, triangle);
+    }
 }

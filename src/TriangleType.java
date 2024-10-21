@@ -10,6 +10,9 @@ public class TriangleType {
             result = "Regular triangle";
         }
 
+        if (side1 > (side2 + side3)) {
+            result = "Not a triangle";
+        }
 
         return result;
     }
