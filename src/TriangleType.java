@@ -10,15 +10,15 @@ public class TriangleType {
             result = "Regular triangle";
         }
 
-        boolean OneSideGreaterThanTheSumOfOtherSides = side1 > (side2 + side3) ||
+        boolean OneSideIsGreaterThanTheSumOfOtherSides = side1 > (side2 + side3) ||
                                                         side2 > (side1 + side3) ||
                                                         side3 > (side1 + side2);
-        if (OneSideGreaterThanTheSumOfOtherSides) {
+        if (OneSideIsGreaterThanTheSumOfOtherSides) {
             result = "Not a triangle";
         }
 
-        boolean OneSideSmallerThanOrEqual0 = side1 <= 0 || side2 <= 0 || side3 <= 0;
-        if (OneSideSmallerThanOrEqual0) {
+        boolean OneSideIsSmallerThanOrEqual0 = side1 <= 0 || side2 <= 0 || side3 <= 0;
+        if (OneSideIsSmallerThanOrEqual0) {
             result = "Not a triangle";
         }
 
