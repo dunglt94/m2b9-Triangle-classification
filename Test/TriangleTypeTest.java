@@ -30,5 +30,16 @@ class TriangleTypeTest {
         assertEquals(result, triangle);
     }
 
+    @Test
+    @DisplayName("Regular triangle")
+    public void testTriangleTypeCaseRegularGetTriangle() {
+        TriangleType triangleType = new TriangleType();
+        int side1 = 3;
+        int side2 = 4;
+        int side3 = 5;
 
+        String result = "Regular triangle";
+        String triangle = triangleType.getTriangleType(side1, side2, side3);
+        assertEquals(result, triangle);
+    }
 }
