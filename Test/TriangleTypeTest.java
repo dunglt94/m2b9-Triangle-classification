@@ -31,14 +31,14 @@ class TriangleTypeTest {
     }
 
     @Test
-    @DisplayName("Regular triangle")
+    @DisplayName("Scalene triangle")
     public void testTriangleTypeCaseRegularGetTriangle() {
         TriangleType triangleType = new TriangleType();
         int side1 = 3;
         int side2 = 4;
         int side3 = 5;
 
-        String result = "Regular triangle";
+        String result = "Scalene triangle";
         String triangle = triangleType.getTriangleType(side1, side2, side3);
         assertEquals(result, triangle);
     }
